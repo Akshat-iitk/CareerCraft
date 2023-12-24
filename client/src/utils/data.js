@@ -8,8 +8,8 @@ import {
     Google,
     Facebook,
     CodeWave,
+    UserProfile
   } from "../assets";
-  
   export const jobTypes = ["Full-Time", "Part-Time", "ContracT", "Intern"];
   
   export const experience = [
@@ -409,13 +409,13 @@ import {
       token: "gjhsdgsjgdjh",
     },
     {
-      firstName: "CodeWaver",
-      lastName: "Solutions",
-      email: "support@code.com",
-      contact: "support@google",
+      firstName: "Akshat",
+      lastName: "Tiwari",
+      email: "code@code.com",
+      contact: "contact@google",
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      profileUrl: CodeWave,
+      profileUrl: UserProfile,
       accountType: "seeker",
       cvUrl: "",
       token: "gjhsdgsjgdjh",
