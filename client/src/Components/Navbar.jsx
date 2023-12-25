@@ -93,7 +93,7 @@ function MenuList({user , onClick}) {
 }
 const Navbar = () => {
   const user = users[1];
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleCloseNavbar = () => {
     setIsOpen((prev) => !prev);
