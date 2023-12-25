@@ -15,7 +15,15 @@ function FindJobs() {
   const [isfFtching, setIsFetching] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  return <div><Header/></div>;
+  return <div><Header
+  title='Discover Your Ideal Career Path'
+  type='home'
+  handleClick={() => {}}
+  searchQuery={searchQuery}
+  setSearchQuery={setSearchQuery}
+  location={jobLocation}
+  setLocation={setJobLocation}
+  /></div>;
 }
 
 export default FindJobs;

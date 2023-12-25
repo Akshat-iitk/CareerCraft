@@ -12,6 +12,7 @@ import JobImg from "./job.jpg";
 import Facebook from "./facebook.png";
 import CodeWave from "./codewave.png";
 import UserProfile from "./userprofile.png" 
+import demo from "./demo.png"
 export {
   CodeWave,
   NoProfile,
@@ -27,4 +28,5 @@ export {
   Office,
   JobImg,
   UserProfile,
+  demo
 };

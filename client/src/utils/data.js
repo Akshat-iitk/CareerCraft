@@ -26,8 +26,6 @@ import {
     "Data Scientist",
     "Remote",
     "Full-Time",
-    "Sales",
-    "Office Assistant",
   ];
   
   export const jobs = [
