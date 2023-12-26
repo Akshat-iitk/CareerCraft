@@ -92,7 +92,7 @@ function MenuList({user , onClick}) {
   );
 }
 const Navbar = () => {
-  const user = users[1];
+  const user = users[0];
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCloseNavbar = () => {
@@ -116,9 +116,17 @@ const Navbar = () => {
             <li className="font-semibold">
               <Link to="/companies" className="font-semibold">Companies</Link>
             </li>
-            <li className="font-semibold">
+            {user?.accountType === 'seeker' ? (
+               <li className="font-semibold">
+               <Link to="/upload-job" className="font-semibold">My Application</Link>
+             </li>
+      ) : (
+        <li className="font-semibold">
               <Link to="/upload-job" className="font-semibold">Upload Job</Link>
             </li>
+      )}
+            
+            
             <li >
               <Link to="/about-us" className="font-semibold">About</Link>
             </li>
