@@ -68,7 +68,8 @@ function MenuList({user , onClick}) {
             </Menu.Item>
             <Menu.Item>
                 {({ active }) => (
-                  <button
+                  <Link 
+                  to="/user-auth"
                     onClick={() => handleLogout()}
                     className={`${
                       active ? "bg-blue-500 text-white" : "text-gray-900"
@@ -81,7 +82,7 @@ function MenuList({user , onClick}) {
                       aria-hidden='true'
                     />
                     Log Out
-                  </button>
+                  </Link>
                 )}
               </Menu.Item>
           </div>
