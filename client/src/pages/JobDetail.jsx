@@ -16,14 +16,14 @@ function JobDetail() {
   }, [id]);
   return (
     <div className="container mx-auto">
-      <div className="w-full flex flex-col md:flex-row gap-10">
-        <div className="w-full h-fit md:w-2/3 2xl:2/4 bg-white px-5 py-10 md:px-10 shadow-md">
-          <div className="w-full flex items-center justify-between">
+      <div className="w-full flex flex-col md:flex-row gap-10 ">
+        <div className="w-full h-fit md:w-2/3 2xl:2/4 bg-white px-5 py-10 md:px-10 shadow-md ">
+          <div className="w-full flex items-center justify-between hover:">
             <div className="w-3/4 flex gap-2">
               <img
                 src={job?.company?.profileUrl}
                 alt={job?.company?.name}
-                className="w-20 h-20 md:w-24 md:h-20 rounded"
+                className="w-20 h-20 md:w-24 md:h-20 rounded-lg p-3 hover:scale-105 "
               />
               <div className="flex flex-col">
                 <p className="text-xl font-semibold text-gray-600">
@@ -39,10 +39,11 @@ function JobDetail() {
                 <span className="text-gray-500 text-sm">
                   {moment(job?.createdAt).fromNow()}
                 </span>
-              </div>
+              </div>  
             </div>
-            <div className=''>
-              <AiOutlineSafetyCertificate className='text-3xl text-blue-500' />
+            <div className=' flex flex-col flex-wrap items-center cursor-pointer hover:font-semibold hover:scale-105 hover:shadow-md bg-slate-100 rounded-lg'>
+              <AiOutlineSafetyCertificate className='text-3xl text-green-500' />
+              <span className=" text-sm opacity-80">verified</span>
             </div>
           </div>
           <div className='w-full flex flex-wrap md:flex-row gap-2 items-center justify-between my-10'>
@@ -81,7 +82,7 @@ function JobDetail() {
               containerStyles={`w-full flex items-center justify-center py-3 px-5 outline-none rounded-full text-sm ${
                 selected === "0"
                   ? "bg-black text-white"
-                  : "bg-white text-black border border-gray-300"
+                  : "bg-white text-black border border-gray-300 hover:bg-gray-200"
               }`}
             />
 
@@ -91,7 +92,7 @@ function JobDetail() {
               containerStyles={`w-full flex items-center justify-center  py-3 px-5 outline-none rounded-full text-sm ${
                 selected === "1"
                   ? "bg-black text-white"
-                  : "bg-white text-black border border-gray-300"
+                  : "bg-white text-black border border-gray-300 hover:bg-gray-200"
               }`}
             />
           </div>
@@ -131,6 +132,18 @@ function JobDetail() {
               title='Apply Now'
               containerStyles={`w-full flex items-center justify-center text-white bg-black py-3 px-5 outline-none rounded-full text-base`}
             />
+          </div>
+        </div>
+        {/* RIGHT SIDE */}
+        <div className='w-full md:w-1/3 2xl:w-2/4 p-5 mt-20 md:mt-0'>
+          <p className='text-black hover:text-gray-700 font-semibold'>Similar Job Post</p>
+
+          <div className='w-full flex flex-wrap gap-3'>
+            {jobs?.slice(0, 6).map((job, index) => (
+              <div className=" hover:scale-105">
+              <JobCard job={job} key={index}/>
+              </div>
+            ))}
           </div>
         </div>
       </div>
