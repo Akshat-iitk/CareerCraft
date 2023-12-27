@@ -2,9 +2,10 @@ import { Outlet, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Footer, Navbar } from "./components";
 import { About, AuthPage, Companies, CompanyProfile, FindJobs, JobDetail, UploadJob, UserProfile } from "./pages";
 import { useSelector } from "react-redux";
+import { users } from "./utils/data";
 
 function Layout() {
-  const {user} = useSelector((state)=> state.user);
+let user = users[1];
   const location = useLocation();
   return user ? (
     <Outlet />
@@ -13,7 +14,7 @@ function Layout() {
   );
 }
 function App() {
-  const {user} = useSelector((state)=> state.user);
+  const user = users[1];
   return (
     <main>
       <Navbar />
@@ -35,6 +36,7 @@ function App() {
           />
 
           <Route path={"/company-profile"} element={<CompanyProfile/>} />
+          <Route path={"/user-profile"} element={<UserProfile/>} />
           <Route path={"/company-profile/:id"} element={<CompanyProfile/>} />
           <Route path={"/upload-job"} element={<UploadJob/>} />
           <Route path={"/job-detail/:id"} element={<JobDetail/>} />

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import CustomButton from "./CustomButton";
 import { users } from "../utils/data";
+
 function MenuList({user , onClick}) {
   const handleLogout = () => {};
   return (
@@ -66,7 +67,8 @@ function MenuList({user , onClick}) {
                   </Link>
                 )}
             </Menu.Item>
-            <Menu.Item>
+            
+              <Menu.Item>
                 {({ active }) => (
                   <Link 
                   to="/user-auth"
@@ -85,6 +87,7 @@ function MenuList({user , onClick}) {
                   </Link>
                 )}
               </Menu.Item>
+              
           </div>
           </Menu.Items>
        </Transition>
@@ -93,9 +96,8 @@ function MenuList({user , onClick}) {
   );
 }
 const Navbar = () => {
-  const user = users[0];
+  let user = users[1];
   const [isOpen, setIsOpen] = useState(false);
-
   const handleCloseNavbar = () => {
     setIsOpen((prev) => !prev);
   };
@@ -119,7 +121,7 @@ const Navbar = () => {
             </li>
             {user?.accountType === 'seeker' ? (
                <li className="font-semibold">
-               <Link to="/upload-job" className="font-semibold">My Application</Link>
+               <Link to="/MyApplication" className="font-semibold">My Application</Link>
              </li>
       ) : (
         <li className="font-semibold">

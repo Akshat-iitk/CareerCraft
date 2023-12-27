@@ -177,7 +177,7 @@ const CompanyProfile = () => {
       <div className="">
         <div className="w-full flex flex-col md:flex-row gap-3 justify-between">
           <h2 className="text-gray-600 text-xl font-semibold">
-            Welcome, {info?.name}
+            Welcome,{info?.name}
           </h2>
 
           {user?.user?.accountType === undefined &&

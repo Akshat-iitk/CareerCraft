@@ -8,4 +8,5 @@ import ListBox from "./ListBox";
 import JobCard from "./JobCard";
 import CompanyCard from "./CompanyCard";
 import Loading from "./Loading";
-export { Navbar, Footer , CustomButton , TextInput , SignUp , Header,ListBox,JobCard,CompanyCard,Loading};
+import JobTypes from "./JobTypes";
+export { Navbar, Footer , CustomButton , TextInput , SignUp , Header,ListBox,JobCard,CompanyCard,Loading,JobTypes};
