@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { CompanyCard, Header, ListBox, Loading } from "../components";
+import { CompanyCard, CustomButton, Header, ListBox, Loading } from "../components";
 import { companies } from "../utils/data";
 
 function Companies() {
@@ -52,6 +52,15 @@ function Companies() {
             {data?.length} records out of {recordsCount}
           </p>
         </div>
+        {numPage > page && !isFetching && (
+          <div className='w-full flex items-center justify-center pt-16'>
+            <CustomButton
+              onClick={handleShowMore}
+              title='Load More'
+              containerStyles={`text-blue-600 py-1.5 px-5 focus:outline-none hover:bg-blue-700 hover:text-white rounded-full text-base border border-blue-600`}
+            />
+          </div>
+        )}
         </div>
   </div>;
 }
