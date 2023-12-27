@@ -110,7 +110,7 @@ const Navbar = () => {
               Career<span className="text-[#1677cccb] text-2xl">Craft</span>
             </Link>
           </div>
-          <ul className="hidden lg:flex gap-10 text-base">
+          <ul className="hidden md:flex gap-10 text-base">
             <li className="font-semibold">
               <Link to="/" className="font-semibold">Find Job</Link>
             </li >
