@@ -9,6 +9,7 @@ A work portal with dynamic Frontend, Delightful Experiences: That's Reactivity
 3. [Installation](#installation)
 4. [Overview](#overview)
 5. [Technologies Used](#technologies-used)
+6. [Website preview](#deployed-website)
 
 ## Introduction
 
