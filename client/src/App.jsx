@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { users } from "./utils/data";
 
 function Layout() {
-let user = users[1];
+  const { user } = useSelector((state) => state.user);
   const location = useLocation();
   return user ? (
     <Outlet />
@@ -14,12 +14,12 @@ let user = users[1];
   );
 }
 function App() {
-  const user = users[1];
+  const { user } = useSelector((state) => state.user);
   return (
     <main>
-      <Navbar />
+      <Navbar />  
       <Routes>
-        <Route element={<Layout />}>
+      <Route element={<Layout />}>
           <Route
             path="/"
             element={<Navigate to="/find-jobs" replace={true} />}
@@ -40,7 +40,7 @@ function App() {
           <Route path={"/company-profile/:id"} element={<CompanyProfile/>} />
           <Route path={"/upload-job"} element={<UploadJob/>} />
           <Route path={"/job-detail/:id"} element={<JobDetail/>} />
-        </Route>
+          </Route>
         <Route path="/about-us" element={<About/>} />
         <Route path="/user-auth" element={<AuthPage/>} />
       </Routes>

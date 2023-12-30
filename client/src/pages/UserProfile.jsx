@@ -9,7 +9,7 @@ import { CustomButton, TextInput } from "../components";
 import { users } from "../utils/data";
 
 const UserForm = ({ open, setOpen }) => {
-  const user = users[1]
+  const { user } = useSelector((state) => state.user);
   const {
     register,
     handleSubmit,
@@ -202,7 +202,7 @@ const UserForm = ({ open, setOpen }) => {
 };
 
 const UserProfile = () => {
-  const user = users[1]
+  const { user } = useSelector((state) => state.user);
   const [open, setOpen] = useState(false);
   const userInfo = user;
 
