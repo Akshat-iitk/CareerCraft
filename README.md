@@ -82,8 +82,14 @@ Here are the key technologies and tools used in the development of CareerCraft :
 
 - **[Moment.js](https://momentjs.com/):** A library for parsing, validating, manipulating, and formatting dates.
 
-- **[...other technologies you used]:** like react-redux , react-hooks , react-icons , HMTL , JavaScript , core css styles
+- **[...other technologies you used]:** like react-redux, react-hooks , react-icons, HTML , JavaScript , core CSS styles
 
 These technologies work together to create a seamless and efficient development environment for building a powerful and interactive frontend application.
 
+## Deployed Website
 
+The live version of CarrerCraft is accessible at:
+
+[[https://carrercraft.netlify.app/](https://carrercraft.netlify.app/)]
+
+Feel free to explore the application and experience it in action!
