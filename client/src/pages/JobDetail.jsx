@@ -48,9 +48,9 @@ function JobDetail() {
           </div>
           <div className='w-full flex flex-wrap md:flex-row gap-2 items-center justify-between my-10'>
             <div className='bg-[#bdf4c8] w-40 h-16 rounded-lg flex flex-col items-center justify-center'>
-              <span className='text-sm'>Salary</span>
+              <span className='text-sm'> {job?.jobType === "Internship" ? "Stipend" : "Salary"}</span>
               <p className='text-lg font-semibold text-gray-700'>
-                $ {job?.salary}
+                {job?.salary} INR
               </p>
             </div>
 
@@ -130,7 +130,7 @@ function JobDetail() {
           <div className='w-full'>
             <CustomButton
               title='Apply Now'
-              containerStyles={`w-full flex items-center justify-center text-white bg-black py-3 px-5 outline-none rounded-full text-base`}
+              containerStyles={`w-full flex items-center justify-center text-white bg-black py-3 px-5 outline-none rounded-full text-base hover:bg-opacity-90`}
             />
           </div>
         </div>

@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { BsCheck2, BsChevronExpand } from "react-icons/bs";
 
-const types = ["Full-Time", "Part-Time", "Contract", "Intern"];
+const types = ["Full-Time", "Part-Time", "Freelance", "Internship"];
 
 export default function JobTypes({ jobTitle, setJobTitle }) {
   return (

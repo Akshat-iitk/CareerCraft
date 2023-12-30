@@ -24,7 +24,7 @@ const UploadJob = () => {
     <div className='container mx-auto flex flex-col md:flex-row gap-8 2xl:gap-14 bg-[#f7fdfd] px-5'>
       <div className='w-full h-fit md:w-2/3 2xl:2/4 bg-white px-5 py-10 md:px-10 shadow-md'>
         <div>
-          <p className='text-gray-500 font-semibold text-2xl'>Job Post</p>
+          <p className='text-gray-500 font-semibold text-2xl'>Work Post</p>
 
           <form
             className='w-full mt-2 flex flex-col gap-8'
@@ -51,7 +51,7 @@ const UploadJob = () => {
               <div className='w-1/2'>
                 <TextInput
                   name='salary'
-                  label='Salary (USD)'
+                  label='Salary with currency'
                   placeholder='eg. 1500'
                   type='number'
                   register={register("salary", {
