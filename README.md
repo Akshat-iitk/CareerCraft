@@ -39,7 +39,7 @@ npm run dev
 
 ### Overview
 
-- **`public/`:** Contains the main HTML file (`index.html`) and other static assets that don't require processing by webpack.
+- **`public/`:** Contains the main HTML file (`index.html`) and other static assets that don't require processing by Webpack.
 
 - **`src/`:** The main source code directory.
 
@@ -81,11 +81,11 @@ Here are the key technologies and tools used in the development of CareerCraft :
 
 - **[Headless UI](https://headlessui.dev/):** A set of completely unstyled, fully accessible UI components for building highly interactive user interfaces.
 
-- **[Moment.js](https://momentjs.com/):** A library for parsing, validating, manipulating, and formatting dates.
+- **[Moment](https://momentjs.com/):** A library for parsing, validating, manipulating, and formatting dates.
 
-- **[...other technologies you used]:** like react-redux, react-hooks , react-icons, HTML , JavaScript , core CSS styles
+- **[...other technologies you used]:** like react-redux, react-hooks, react-icons, HTML, JavaScript, core CSS styles
 
-These technologies work together to create a seamless and efficient development environment for building a powerful and interactive frontend application.
+These technologies work together to create a seamless and efficient development environment for building a powerful and interactive front-end application.
 
 ## Deployed Website
 
