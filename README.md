@@ -29,7 +29,7 @@ Welcome to CareerCraft, where innovation meets opportunity. CareerCraft is a dyn
 To get started with CarrerCraft, follow these steps:
 
 ```bash
-git clone https://github.com/your-sername/your-project.git
+git clone https://github.com/Akshat-iitk/CareerCraft.git
 cd your-project
 cd client
 npm install
